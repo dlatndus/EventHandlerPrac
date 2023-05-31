@@ -43,5 +43,27 @@ namespace EventHandlerPrac
         {
 
         }
+
+        private int time = 0;
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            time++;
+            label1.Text = time + "초";
+            textBox1.Text = time + "초";
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            timer1.Enabled = !timer1.Enabled;
+            if(timer1.Enabled) {
+                button3.Text = "타이머 끄기";
+
+            }
+            else
+            {
+                button3.Text = "타이머 켜기";
+            }
+        }
     }
 }
