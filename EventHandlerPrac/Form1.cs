@@ -16,5 +16,10 @@ namespace EventHandlerPrac
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("버튼이 클릭되었습니다.");
+        }
     }
 }
